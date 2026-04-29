@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamNova | Your Modern Digital Sanctuary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="loader-content">
+            <div class="book-icon"><i class="fas fa-book-open"></i></div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#">Dream<span>Nova</span></a>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#featured">Books</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="mobile-only"><a href="#" id="fav-mobile-btn">Favorites</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="fav-btn" class="desktop-only">
+                    <i class="fas fa-heart"></i>
+                    <span id="fav-count">0</span>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="reveal">The Infinite <br><span>Library of Dreams</span></h1>
+                <p class="reveal">Explore thousands of digital volumes, from timeless classics to futuristic tales. Immersive reading designed for the modern mind.</p>
+                <div class="hero-btns reveal">
+                    <a href="#featured" class="btn btn-primary">Start Exploring</a>
+                    <a href="#about" class="btn btn-secondary">Our Story</a>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-item">
+                <h3 class="counter" data-target="15000">0</h3>
+                <p>E-Books</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="counter" data-target="4200">0</h3>
+                <p>Authors</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="counter" data-target="89000">0</h3>
+                <p>Readers</p>
+            </div>
+        </section>
+
+        <section id="featured" class="featured">
+            <div class="section-header">
+                <h2>Featured Collections</h2>
+                <div class="controls">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="book-search" placeholder="Search by title or author...">
+                    </div>
+                </div>
+            </div>
+
+            <div id="categories" class="filter-container">
+                <button class="filter-btn active" data-category="all">All Genres</button>
+                <button class="filter-btn" data-category="Fantasy">Fantasy</button>
+                <button class="filter-btn" data-category="Sci-Fi">Sci-Fi</button>
+                <button class="filter-btn" data-category="Mystery">Mystery</button>
+                <button class="filter-btn" data-category="Philosophy">Philosophy</button>
+            </div>
+
+            <div class="book-grid" id="book-grid">
+                </div>
+        </section>
+
+        <section class="trending">
+            <div class="section-header">
+                <h2>Trending Today</h2>
+            </div>
+            <div class="slider-wrapper">
+                <button class="slide-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider" id="trending-slider">
+                    </div>
+                <button class="slide-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2>Where Imagination Meets Technology</h2>
+                    <p>DreamNova started with a simple idea: Knowledge should be beautiful. We've curated a space that respects the tradition of literature while embracing the fluidity of digital interaction.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check"></i> High-fidelity digital renderings</li>
+                        <li><i class="fas fa-check"></i> Personalized reading progress</li>
+                        <li><i class="fas fa-check"></i> Community driven reviews</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Library Interior">
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"The interface is so clean, it actually makes me want to read more. DreamNova is a game changer for my research."</p>
+                <h4>— Elena Thorne, Archivist</h4>
+            </div>
+            <div class="testimonial-card">
+                <i class="fas fa-quote-left"></i>
+                <p>"A visually stunning platform. The dark mode is perfectly balanced for late-night reading sessions."</p>
+                <h4>— Marcus Vane, Author</h4>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-content">
+                <h2>Join the Inner Circle</h2>
+                <p>Subscribe for curated book lists and exclusive digital releases.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-info">
+                <h3>Dream<span>Nova</span></h3>
+                <p>Elevating the reading experience through modern design and curated knowledge.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#featured">Browse</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 DreamNova Library. Crafted for the curious.</p>
+        </div>
+    </footer>
+
+    <div id="book-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
